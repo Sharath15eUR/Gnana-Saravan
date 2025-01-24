@@ -1,0 +1,36 @@
+2.  Create a file and remove write permission for group user alone.
+
+Solution:
+
+saravan@saravan-VirtualBox:~$ touch saravan.c
+saravan@saravan-VirtualBox:~$ chmod u=rx,g=rx,o=rwx saravan.c
+saravan@saravan-VirtualBox:~$ ls -ltr
+total 88
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Videos
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Templates
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Public
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Music
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Documents
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Desktop
+-rw-rw-r-- 1 saravan saravan  617 Dec 22 01:04 listingofdir
+-rw-rw-r-- 1 saravan saravan   14 Dec 25 13:13 jerry
+-rw-rw-r-- 1 saravan saravan  674 Dec 25 13:17 temp_file
+-rw-rw-r-- 1 saravan saravan 2970 Dec 25 13:21 find_path
+-rw-rw-r-- 1 saravan saravan   61 Dec 25 13:26 errorfile
+-rw-rw-r-- 1 saravan saravan   70 Dec 25 13:37 irfan-eliane
+-rw-rw-r-- 1 saravan saravan  903 Dec 25 13:37 listdir
+-rw-rw-r-- 1 saravan saravan 1061 Dec 25 13:38 file3
+-rw-rw-r-- 1 saravan saravan 1061 Dec 25 13:38 file1
+-rw-rw-r-- 1 saravan saravan 1061 Dec 25 13:38 file
+-rw-rw-r-- 1 saravan saravan	0 Dec 25 13:49 george
+-rw-rw-r-- 1 saravan saravan   34 Dec 25 13:50 puddy
+-rw-rw-r-- 1 saravan saravan	0 Dec 25 13:54 luther
+-rw-rw-r-- 1 saravan saravan   16 Dec 25 23:00 seinfield
+drwx------ 4 saravan saravan 4096 Jan 11 19:05 snap
+drwxrwxr-x 3 saravan saravan 4096 Jan 11 21:10 workspace
+-rwxr-xr-x 1 saravan saravan	0 Jan 24 17:18 hello.c
+drwxr-xr-x 2 saravan saravan 4096 Jan 24 17:29 Downloads
+drwxr-xr-x 3 saravan saravan 4096 Jan 24 17:31 Pictures
+-r-xr-xrwx 1 saravan saravan	0 Jan 24 17:34 saravan.c
+
+You can see from the above picture that write permission is removed for the group and the user r —> read ,w —> write, x—-> execute
