@@ -1,0 +1,17 @@
+3.Create a file and add a softlink to the file in different directory
+
+Solution:
+
+saravan@saravan-VirtualBox:~$ mkdir dir1
+saravan@saravan-VirtualBox:~$ cd dir1
+saravan@saravan-VirtualBox:~/dir1$ mkdir dir2
+saravan@saravan-VirtualBox:~/dir1$ cd dir2
+saravan@saravan-VirtualBox:~/dir1/dir2$ touch file1
+saravan@saravan-VirtualBox:~/dir1/dir2$ cd ..
+saravan@saravan-VirtualBox:~/dir1$ ln -s file1 file1_softlink
+saravan@saravan-VirtualBox:~/dir1$ ls -ltr
+total 4
+drwxrwxr-x 2 saravan saravan 4096 Jan 24 17:41 dir2
+lrwxrwxrwx 1 saravan saravan	5 Jan 24 17:43 file1_softlink -> file1
+
+Since the softlink for the file1 is created you can see the -> symbol for the file1.SOftlinks are like the Shortcuts in Windows
