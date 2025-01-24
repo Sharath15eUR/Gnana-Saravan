@@ -1,0 +1,44 @@
+1.Create a file and add executable permission to all users (user, group and others)
+
+Solution:
+
+saravan@saravan-VirtualBox:~/Desktop$ ls -ltr
+total 0
+saravan@saravan-VirtualBox:~/Desktop$ cd /home/saravan
+saravan@saravan-VirtualBox:~$ touch hello.c
+saravan@saravan-VirtualBox:~$ chmod 755 hello
+chmod: cannot access 'hello': No such file or directory
+saravan@saravan-VirtualBox:~$ chmod 755 hello.c
+saravan@saravan-VirtualBox:~$ ls -ltr
+total 88
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Videos
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Templates
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Public
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Pictures
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Music
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Documents
+drwxr-xr-x 2 saravan saravan 4096 May  4  2023 Desktop
+-rw-rw-r-- 1 saravan saravan  617 Dec 22 01:04 listingofdir
+-rw-rw-r-- 1 saravan saravan   14 Dec 25 13:13 jerry
+-rw-rw-r-- 1 saravan saravan  674 Dec 25 13:17 temp_file
+-rw-rw-r-- 1 saravan saravan 2970 Dec 25 13:21 find_path
+-rw-rw-r-- 1 saravan saravan   61 Dec 25 13:26 errorfile
+-rw-rw-r-- 1 saravan saravan   70 Dec 25 13:37 irfan-eliane
+-rw-rw-r-- 1 saravan saravan  903 Dec 25 13:37 listdir
+-rw-rw-r-- 1 saravan saravan 1061 Dec 25 13:38 file3
+-rw-rw-r-- 1 saravan saravan 1061 Dec 25 13:38 file1
+-rw-rw-r-- 1 saravan saravan 1061 Dec 25 13:38 file
+-rw-rw-r-- 1 saravan saravan	0 Dec 25 13:49 george
+-rw-rw-r-- 1 saravan saravan   34 Dec 25 13:50 puddy
+-rw-rw-r-- 1 saravan saravan	0 Dec 25 13:54 luther
+-rw-rw-r-- 1 saravan saravan   16 Dec 25 23:00 seinfield
+drwx------ 4 saravan saravan 4096 Jan 11 19:05 snap
+drwxrwxr-x 3 saravan saravan 4096 Jan 11 21:10 workspace
+drwxr-xr-x 2 saravan saravan 4096 Jan 11 21:15 Downloads
+-rwxr-xr-x 1 saravan saravan	0 Jan 24 17:18 hello.c
+saravan@saravan-VirtualBox:~$ 
+
+
+
+You can see that hello.c file has been created and the read write execution permission is given to all
+ 7 is to give permission for owner and 5 for the group and 5 for the others.
