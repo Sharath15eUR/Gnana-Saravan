@@ -1,0 +1,30 @@
+saravan@saravan-VirtualBox:~/dir1$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 17:12 ?        00:00:03 /sbin/init splash
+root           2       0  0 17:12 ?        00:00:00 [kthreadd]
+root           3       2  0 17:12 ?        00:00:00 [rcu_gp]
+root           4       2  0 17:12 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 17:12 ?        00:00:00 [slub_flushwq]
+root           6       2  0 17:12 ?        00:00:00 [netns]
+root           8       2  0 17:12 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 17:12 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 17:12 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 17:12 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 17:12 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 17:12 ?        00:00:00 [ksoftirqd/0]
+root          15       2  0 17:12 ?        00:00:02 [rcu_preempt]
+root          16       2  0 17:12 ?        00:00:00 [migration/0]
+root          17       2  0 17:12 ?        00:00:00 [idle_inject/0]
+root          19       2  0 17:12 ?        00:00:00 [cpuhp/0]
+root          20       2  0 17:12 ?        00:00:00 [cpuhp/1]
+root          21       2  0 17:12 ?        00:00:00 [idle_inject/1]
+root          22       2  0 17:12 ?        00:00:00 [migration/1]
+root          23       2  0 17:12 ?        00:00:00 [ksoftirqd/1]
+root          25       2  0 17:12 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          26       2  0 17:12 ?        00:00:00 [kdevtmpfs]
+root          27       2  0 17:12 ?        00:00:00 [inet_frag_wq]
+root          28       2  0 17:12 ?        00:00:00 [kauditd]
+root          29       2  0 17:12 ?        00:00:00 [khungtaskd]
+
+
+Here PID → Process ID ,PPID -> Parent process ID .Process ID is given to all the process that is running on OS so that OS can schedule those process accordingly.
