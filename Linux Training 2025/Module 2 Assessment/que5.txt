@@ -1,0 +1,5 @@
+saravan@saravan-VirtualBox:~/Desktop$ netstat -rn | grep 'UG' | awk '{print $2}' | sort
+
+10.0.2.2
+
+Here you can see the Active Gateway is 10.0.2.2
