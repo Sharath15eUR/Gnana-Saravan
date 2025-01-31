@@ -1,0 +1,32 @@
+Mention the Source directory, Destination directory, and the file extension (e.g., .txt)
+/home/saravan/Desktop/myscripts/file_0 /home/saravan/Desktop/myscripts/des .txt
+Files to be backed up:
+File: file10.txt, Size: 22 bytes
+File: file1.txt, Size: 21 bytes
+File: file2.txt, Size: 20 bytes
+File: file3.txt, Size: 23 bytes
+File: file4.txt, Size: 20 bytes
+File: file5.txt, Size: 19 bytes
+File: file6.txt, Size: 33 bytes
+File: file7.txt, Size: 17 bytes
+File: file8.txt, Size: 19 bytes
+File: file9.txt, Size: 22 bytes
+Starting the backup process...
+Overwriting /home/saravan/Desktop/myscripts/des/file10.txt with newer version of file10.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file1.txt with newer version of file1.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file2.txt with newer version of file2.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file3.txt with newer version of file3.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file4.txt with newer version of file4.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file5.txt with newer version of file5.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file6.txt with newer version of file6.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file7.txt with newer version of file7.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file8.txt with newer version of file8.txt
+Overwriting /home/saravan/Desktop/myscripts/des/file9.txt with newer version of file9.txt
+Backup completed successfully. Report saved to /home/saravan/Desktop/myscripts/des/backup_report.log.
+saravan@saravan-VirtualBox:~/Desktop/myscripts$ cd des/
+saravan@saravan-VirtualBox:~/Desktop/myscripts/des$ cat backup_re*
+Backup Report - Saturday 01 February 2025 01:48:26 AM IST
+--------------------------
+Total files processed: 10
+Total size of files backed up: 216 bytes
+Backup directory: /home/saravan/Desktop/myscripts/des
