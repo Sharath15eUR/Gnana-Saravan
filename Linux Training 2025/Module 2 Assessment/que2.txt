@@ -1,0 +1,10 @@
+saravan@saravan-VirtualBox:~/Desktop$ touch config.txt
+saravan@saravan-VirtualBox:~/Desktop$ echo "server_name = localhost" > config.txt
+saravan@saravan-VirtualBox:~/Desktop$ cat config.txt
+server_name = localhost
+saravan@saravan-VirtualBox:~/Desktop$ sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+saravan@saravan-VirtualBox:~/Desktop$ cat updated_config.txt
+server_name = 127.0.0.1
+
+
+Here you can see that using echo command we have written the server name as localhost in the config.txt.Using sed command we have substituted the word of local host with 127.0.0.1.
