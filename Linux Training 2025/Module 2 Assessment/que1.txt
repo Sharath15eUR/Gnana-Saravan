@@ -1,0 +1,15 @@
+saravan@saravan-VirtualBox:~/Desktop$ fallocate -l 2M file_greater_1M.txt
+saravan@saravan-VirtualBox:~/Desktop$ ls -ltr
+total 2048
+-rw-rw-r-- 1 saravan saravan 2097152 Jan 31 11:22 file_greater_1M.txt
+saravan@saravan-VirtualBox:~/Desktop$ find . -type f -size +1M > saravan_1M.txt
+saravan@saravan-VirtualBox:~/Desktop$ ls -ltr
+total 2052
+-rw-rw-r-- 1 saravan saravan 2097152 Jan 31 11:22 file_greater_1M.txt
+-rw-rw-r-- 1 saravan saravan      22 Jan 31 11:23 saravan_1M.txt
+saravan@saravan-VirtualBox:~/Desktop$ cat saravan_1M.txt
+./file_greater_1M.txt
+saravan@saravan-VirtualBox:~/Desktop$ 
+
+
+Here you can see that using find command we have found the file size which is larger than 1MB and redirects that output to the saravan1M.txt.
