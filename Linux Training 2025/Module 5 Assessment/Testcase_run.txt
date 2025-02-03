@@ -1,0 +1,35 @@
+saravan@saravan-VirtualBox:~/Desktop/myscripts$ ./file_analyzer -d test_dir -k error
+Keyword 'error' found in: test_dir/file1.txt
+Keyword 'error' found in: test_dir/subdir/file3.txt
+Script name: ./file_analyzer
+Number of arguments: 4
+Arguments: -d test_dir -k error
+saravan@saravan-VirtualBox:~/Desktop/myscripts$ ./file_analyzer -f test_dir/file1.txt -k TODO
+Keyword 'TODO' not found in: test_dir/file1.txt
+Script name: ./file_analyzer
+Number of arguments: 4
+Arguments: -f test_dir/file1.txt -k TODO
+saravan@saravan-VirtualBox:~/Desktop/myscripts$ ./file_analyzer --help
+./file_analyzer: illegal option -- -
+Usage: ./file_analyzer [options]
+
+Options:
+  -d <directory>  Directory to search for files containing the keyword
+  -k <keyword>    Keyword to search for in the files
+  -f <file>       File to search for the keyword directly
+  --help          Display this help menu
+
+Examples:
+  ./file_analyzer -d logs -k error   # Recursively search 'logs' directory for 'error'
+  ./file_analyzer -f script.sh -k TODO   # Search 'script.sh' file for 'TODO'
+  ./file_analyzer --help   # Display this help menu
+saravan@saravan-VirtualBox:~/Desktop/myscripts$ ./file_analyzer -d test_dir
+Error: Invalid or empty keyword.
+saravan@saravan-VirtualBox:~/Desktop/myscripts$ ./file_analyzer -d dir_not_exist -k error
+Error: Directory 'dir_not_exist' not found.
+Script name: ./file_analyzer
+Number of arguments: 4
+Arguments: -d dir_not_exist -k error
+saravan@saravan-VirtualBox:~/Desktop/myscripts$ cat errors.log
+Error: Invalid or empty keyword.
+Error: Directory 'dir_not_exist' not found.
